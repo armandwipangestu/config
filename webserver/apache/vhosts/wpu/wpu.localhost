@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http/Web-Programming-Unpas/"
+    ServerName wpu.localhost
+    ServerAlias wpu.localhost
+    ErrorLog "/var/log/httpd/wpu.localhost-error_log"
+    CustomLog "/var/log/httpd/wpu.localhost-access_log" common
+
+    <Directory "/srv/http/Web-Programming-Unpas/">
+      Require all granted
+    </Directory>
+</VirtualHost>

@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http"
+    ServerName xshin.localhost
+    ServerAlias xshin.localhost
+    ErrorLog "/var/log/httpd/xshin.localhost-error_log"
+    CustomLog "/var/log/httpd/xshin.localhost-access_log" common
+
+    <Directory "/srv/http">
+      Require all granted
+    </Directory>
+</VirtualHost>
+

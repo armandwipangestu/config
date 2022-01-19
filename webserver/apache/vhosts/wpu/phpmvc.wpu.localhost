@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http/Web-Programming-Unpas/phpmvc/public"
+    ServerName phpmvc.wpu.localhost
+    ServerAlias phpmvc.wpu.localhost
+    ErrorLog "/var/log/httpd/phpmvc.wpu.localhost-error_log"
+    CustomLog "/var/log/httpd/phpmvc.wpu.localhost-access_log" common
+
+    <Directory "/srv/http/Web-Programming-Unpas/phpmvc">
+      Require all granted
+    </Directory>
+</VirtualHost>

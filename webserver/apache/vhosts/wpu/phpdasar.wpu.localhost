@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http/Web-Programming-Unpas/phpdasar"
+    ServerName phpdasar.wpu.localhost
+    ServerAlias phpdasar.wpu.localhost
+    ErrorLog "/var/log/httpd/phpdasar.wpu.localhost-error_log"
+    CustomLog "/var/log/httpd/phpdasar.wpu.localhost-access_log" common
+
+    <Directory "/srv/http/Web-Programming-Unpas/phpdasar">
+      Require all granted
+    </Directory>
+</VirtualHost>

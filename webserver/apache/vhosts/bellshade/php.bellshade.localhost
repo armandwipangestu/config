@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http/bellshade/PHP"
+    ServerName php.bellshade.localhost
+    ServerAlias php.bellshade.localhost
+    ErrorLog "/var/log/httpd/php.bellshade.localhost-error_log"
+    CustomLog "/var/log/httpd/php.bellshade.localhost-access_log" common
+
+    <Directory "/srv/http/bellshade/PHP">
+      Require all granted
+    </Directory>
+</VirtualHost>

@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@xshin.com
+    DocumentRoot "/srv/http/Web-Programming-Unpas/oophp"
+    ServerName oophp.wpu.localhost
+    ServerAlias oophp.wpu.localhost
+    ErrorLog "/var/log/httpd/oophp.wpu.localhost-error_log"
+    CustomLog "/var/log/httpd/oophp.wpu.localhost-access_log" common
+
+    <Directory "/srv/http/Web-Programming-Unpas/oophp">
+      Require all granted
+    </Directory>
+</VirtualHost>
