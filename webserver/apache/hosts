@@ -1,0 +1,21 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	arch.localdomain	arch
+
+# xShin Domain
+127.0.0.1       xshin.localhost
+127.0.0.1       blog.xshin.localhost
+
+# WPU Domain
+127.0.0.1       wpu.localhost
+127.0.0.1       oophp.wpu.localhost
+127.0.0.1       phpdasar.wpu.localhost
+127.0.0.1       phpmvc.wpu.localhost
+127.0.0.1       javascript.wpu.localhost
+
+# Bellshade
+127.0.0.1       bellshade.localhost
+127.0.0.1       php.bellshade.localhost
